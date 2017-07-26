@@ -7,26 +7,21 @@ using System.Threading.Tasks;
 namespace EventManagementApp
 {
 
+    public enum ServicesAvailable
+    {
+        Marriage,
+        Receptions,
+        Birthdays,
+        BabyShowers,
+        OfficialMeetings,
+        GetTogethers,
+        OfficialGatherings
+    }
+
     enum TypeOfServices
     {
         Personal,
         Professional
     }
-
-    /// <summary>
-    /// This is Services Class
-    /// </summary>
-    class Services
-    {
-
-        #region Properties
-
-        public int ServiceId { get; private set; }
-
-        public string ServiceName { get; private set; }
-
-        public TypeOfServices ServiceType { get; set; } 
-
-        #endregion
-    }
+    
 }

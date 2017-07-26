@@ -8,16 +8,6 @@ namespace EventManagementApp
 {
     class Orders
     {
-        public enum ListOfServices
-        {
-            Marriage,
-            Receptions,
-            Birthdays,
-            BabyShowers,
-            OfficialMeetings,
-            GetTogethers,
-            OfficialGatherings
-        }
 
         #region Properties
 
@@ -25,11 +15,7 @@ namespace EventManagementApp
 
         public int CustomerID { get; set; }
 
-        public int ServiceId { get; private set; }
-
         public TypeOfServices ServiceType { get; set; }
-
-        public ListOfServices SelectedServices { get; set; }
 
         public decimal CurrentTotal { get; set; }
 
