@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 namespace EventManagementApp
 {
 
+    enum TypeOfServices
+    {
+        Personal,
+        Professional
+    }
+
     /// <summary>
     /// This is Services Class
     /// </summary>
@@ -18,6 +24,8 @@ namespace EventManagementApp
         public int ServiceId { get; private set; }
 
         public string ServiceName { get; private set; }
+
+        public TypeOfServices ServiceType { get; set; } 
 
         #endregion
     }
